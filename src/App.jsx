@@ -19,23 +19,23 @@ function App() {
 
   return (
     <>
-      <ClerkProvider
-        routerPush={(to) => navigate(to)}
-        routerReplace={(to) => navigate(to, { replace: true })}
-        publishableKey={PUBLISHABLE_KEY}
-        appearance={{
-          layout: {
-            socialButtonsPlacement: "bottom",
-          },
-          variables: {
-            colorPrimary: "#8A2BE2",
-            colorBackground: "#F0F0F0",
-            colorInputBackground: "#F0F0F0",
-            colorInputText: "#000000",
-          },
-        }}
-      >
-        <Routes>
+      <Routes>
+        <ClerkProvider
+          routerPush={(to) => navigate(to)}
+          routerReplace={(to) => navigate(to, { replace: true })}
+          publishableKey={PUBLISHABLE_KEY}
+          appearance={{
+            layout: {
+              socialButtonsPlacement: "bottom",
+            },
+            variables: {
+              colorPrimary: "#8A2BE2",
+              colorBackground: "#F0F0F0",
+              colorInputBackground: "#F0F0F0",
+              colorInputText: "#000000",
+            },
+          }}
+        >
           <Route path="/sign-up" element={<SignUpPage />} />
           <Route path="/sign-in" element={<SignInPage />} />
           {/* <Route
@@ -63,8 +63,8 @@ function App() {
 
           {/* <Routes path="/" element={<Landing />} /> */}
           <Route path="/" element={<Home />} />
-        </Routes>
-      </ClerkProvider>
+        </ClerkProvider>
+      </Routes>
     </>
   );
 }
