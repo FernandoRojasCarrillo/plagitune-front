@@ -60,6 +60,7 @@ function App() {
             <Route path="start-analysis" element={<StartAnalysisPage />} />
             <Route path="compare-songs" element={<CompareSongsPage />} />
           </Route>
+
           {/* <Routes path="/" element={<Landing />} /> */}
           <Route path="/" element={<Home />} />
         </Routes>
