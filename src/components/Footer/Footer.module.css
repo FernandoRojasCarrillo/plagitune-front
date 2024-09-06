@@ -1,0 +1,29 @@
+.buttonFacebook, .buttonInstagram, .buttonX, .buttonLinkedin {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+    transition: transform 0.3s ease, color 0.3s ease;
+    color: #fff;
+  }
+  
+  .buttonFacebook:hover {
+    color: #4267B2; /* Color de Facebook */
+    transform: scale(1.1);
+  }
+  
+  .buttonInstagram:hover {
+    color: #E4405F; /* Color de Instagram */
+    transform: scale(1.1);
+  }
+  
+  .buttonX:hover {
+    color: #000000; /* Color de X (Twitter) */
+    transform: scale(1.1);
+  }
+  
+  .buttonLinkedin:hover {
+    color: #0A66C2; /* Color de LinkedIn */
+    transform: scale(1.1);
+  }
+  

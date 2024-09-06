@@ -1,0 +1,54 @@
+/* =============== Clerk Override =============== */
+
+.cl-avatarBox {
+  width: 36px;
+  height: 36px;
+}
+
+.cl-userButtonTrigger {
+  height: fit-content !important;
+}
+
+.cl-cardBox,
+.cl-signIn-start,
+.cl-signUp-start,
+.cl-footer {
+  background: var(--secondary-color);
+  padding: 20px;
+  box-shadow: none;
+}
+
+.cl-cardBox {
+  box-shadow: rgba(0, 0, 0, 0.08) 0px 5px 15px 0px,
+    rgba(25, 28, 33, 0.2) 0px 15px 35px -5px
+}
+
+@media (min-width: 1024px) {
+  .cl-cardBox {
+    box-shadow: none;
+  }
+}
+
+.cl-footerActionLink {
+  flex: none;
+}
+
+.cl-internal-1krp6ek,
+.cl-internal-1krp6ek:hover {
+  height: 35px;
+  background-color: #a565e083;
+  color: #fff;
+}
+
+/* .cl-internal-2gzuzc {
+    filter: brightness(1000%);
+  } */
+
+.cl-logoBox {
+  height: 52px;
+}
+
+
+.cl-internal-1dauvpw {
+    
+}

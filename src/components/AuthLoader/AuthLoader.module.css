@@ -1,0 +1,118 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100dvh;
+  background: var(--secondary-color);
+  overflow: hidden;
+}
+
+.loader {
+  position: relative;
+  width: 16rem;
+  height: 16rem;
+}
+
+.circleContainer {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.outerCircle {
+  width: 100%;
+  height: 100%;
+  border: 4px solid #892be24d;
+  border-radius: 100%;
+  opacity: 0.75;
+  animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
+}
+
+@keyframes ping {
+  75%,
+  100% {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+
+.centerCircle {
+  width: 14rem;
+  height: 14rem;
+  border: 4px solid #892be24d;
+  border-radius: 100%;
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@keyframes pulse {
+  50% {
+    opacity: 0.5;
+  }
+}
+
+.innerCircle {
+  width: 12rem;
+  height: 12rem;
+  border: 4px solid transparent;
+  border-top-color: var(--primary-color);
+  border-radius: 100%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.userIcon {
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  width: 6rem;
+  height: 6rem;
+  color: var(--primary-color);
+  animation: bounce 1s infinite;
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(-25%);
+    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+  }
+  50% {
+    transform: none;
+    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  }
+}
+
+.progress {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -1.5rem;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.progressText {
+  color: var(--blue-violet-color);
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  font-weight: bold;
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+.text {
+  margin-top: 2rem;
+  color: var(--blue-violet-color);
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}

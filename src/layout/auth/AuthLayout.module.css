@@ -1,0 +1,39 @@
+.container {
+  min-height: 100dvh;
+  width: 100%;
+  display: grid;
+  text-align: center;
+  background: var(--secondary-color);
+}
+
+@media (min-width: 1024px) {
+  .container {
+    grid-template-columns: minmax(580px, 45%) minmax(0, 55%);
+    justify-content: flex-end;
+  }
+}
+
+.form {
+  display: grid;
+  place-content: center;
+}
+
+@media (max-width: 1024px) {
+  .form {
+    order: 2;
+    transform: translateY(-10rem);
+  }
+}
+
+.cover {
+  background: url("/auth/background.jpg")
+    no-repeat left bottom;
+  background-size: cover;
+}
+
+@media (max-width: 1024px) {
+  .cover {
+    order: 1;
+    height: 16rem;
+  }
+}

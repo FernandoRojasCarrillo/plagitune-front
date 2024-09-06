@@ -1,0 +1,23 @@
+/* Menu.module.css */
+.menu {
+    display: flex;
+    flex-direction: column; /* Para que los elementos estén uno debajo del otro */
+    align-items: center; /* Centra los elementos horizontalmente */
+    background-color: #ACB7C3; 
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,1);
+  }
+  
+  .menu a {
+    text-decoration: none;
+    color: #0D1B2A;
+    font-weight: bold;
+    margin: 0.5rem 0; /* Espacio entre los enlaces */
+    transition: color 0.3s ease;
+  }
+  
+  .menu a:hover {
+    color: #778DA9;
+  }
+  

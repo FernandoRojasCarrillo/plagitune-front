@@ -1,0 +1,96 @@
+.containerUploadFile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.title {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 15px;
+  margin-top: 100px;
+}
+
+.paragraph {
+  text-align: center;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+p {
+  text-align: center;
+  font-size: 13px;
+}
+
+.inputUploadFile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  border: 2px dashed #ccc;
+  cursor: pointer;
+  width: 100%;
+  max-width: 450px;
+  height: 200px;
+  box-sizing: border-box;
+}
+
+.viewUploadFile {
+  text-align: center;
+  font-size: 14px;
+  margin-top: 10px;
+  padding: 10px;
+}
+
+.buttonNewUpload {
+  margin-top: 20px;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .title {
+    font-size: 28px;
+  }
+
+  .paragraph {
+    font-size: 18px;
+  }
+
+  .inputUploadFile {
+    width: 80%;
+    height: 250px;
+  }
+
+  .viewUploadFile {
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .containerUploadFile {
+    padding: 40px;
+  }
+
+  .title {
+    font-size: 30px;
+  }
+
+  .paragraph {
+    font-size: 20px;
+  }
+
+  .inputUploadFile {
+    width: 60%;
+    height: 290px;
+  }
+
+  .viewUploadFile {
+    font-size: 16px;
+  }
+}
+

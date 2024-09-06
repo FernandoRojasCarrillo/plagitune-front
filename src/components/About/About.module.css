@@ -1,0 +1,59 @@
+.container{
+    border-radius: 0% 7% 10% 0%;
+    background-color: #601E90;
+    border-right: #9E78B9 solid 5px;
+}
+
+
+.about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px 350px;
+    color: var(--text-color-primary);
+    
+}
+
+.description {
+    font-size: 18px;
+    margin-bottom: 10px;
+    text-align: center;
+
+}
+
+.team {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10px 20px;
+    color: var(--text-color-primary);
+
+}
+
+.image{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.members {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan en nuevas líneas */
+    justify-content: center;
+    width: 100%;
+    max-width: 1200px; /* Limita el ancho total */
+    margin: 0 auto; /* Centra el contenedor */
+}
+
+.member {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    width: 23%; /* Aproximadamente un cuarto del contenedor, con espacio para el padding */
+    box-sizing: border-box; /* Incluye el padding dentro del ancho */
+    margin: 10px 1%; /* Espacio entre los miembros */
+}
