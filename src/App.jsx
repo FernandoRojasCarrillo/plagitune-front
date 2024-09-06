@@ -61,7 +61,7 @@ function App() {
             <Route path="compare-songs" element={<CompareSongsPage />} />
           </Route>
           {/* <Routes path="/" element={<Landing />} /> */}
-          <Route path="/home" element={<Home />} />
+          <Route path="/" element={<Home />} />
         </Routes>
       </ClerkProvider>
     </>
