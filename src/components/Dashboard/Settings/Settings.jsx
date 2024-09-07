@@ -54,10 +54,10 @@ function Settings() {
         const formData = new FormData();
         formData.append("profilePic", profilePic);
 
-        const response = await axios.put(
-          "http://localhost:3001/user/update-image",
-          formData
-        );
+        // const response = await axios.put(
+        //   "http://localhost:3001/user/update-image",
+        //   formData
+        // );
         Swal.fire(
           "¡Éxito!",
           "Tu imagen de perfil ha sido actualizada.",
@@ -98,10 +98,10 @@ function Settings() {
 
     if (confirm.isConfirmed) {
       try {
-        const response = await axios.put(
-          "http://localhost:3001/user/update-name",
-          { name }
-        );
+        // const response = await axios.put(
+        //   "http://localhost:3001/user/update-name",
+        //   { name }
+        // );
         Swal.fire("¡Éxito!", "Tu nombre ha sido actualizado.", "success");
         handleNameCancel(); // Reiniciar el estado después de la actualización
       } catch (error) {

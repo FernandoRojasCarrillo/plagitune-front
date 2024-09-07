@@ -1,11 +1,10 @@
 import "./App.css";
 import Home from "./Pages/Home/Home";
-import AuthLayout from "./layout/auth/AuthLayout";
 import DashboardPage from "./Pages/Dashboard/DashboardPage";
 import SettingsPages from "./Pages/Dashboard/SettingsPages";
 import { Route, Routes, useNavigate } from "react-router-dom";
 import CompareSongsPage from "./Pages/Dashboard/CompareSongsPage";
-import { ClerkProvider, SignIn, SignUp } from "@clerk/clerk-react";
+import { ClerkProvider } from "@clerk/clerk-react";
 import StartAnalysisPage from "./Pages/Dashboard/StartAnalysisPage";
 import HistoricAnalysisPage from "./Pages/Dashboard/HistoricAnalysisPage";
 import DetailPage from "./components/Dashboard/HistoricAnalysis/DetailPage";

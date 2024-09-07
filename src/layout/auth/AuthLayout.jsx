@@ -5,16 +5,16 @@ import {
   UserButton,
   useUser,
 } from "@clerk/clerk-react";
-import { useNavigate } from "react-router-dom";
+// import { useNavigate } from "react-router-dom";
 import style from "./AuthLayout.module.css";
 import { useEffect } from "react";
 import { OrganizationSwitcher } from "@clerk/clerk-react";
-import AuthLoader from "../../components/AuthLoader/AuthLoader";
+// import AuthLoader from "../../components/AuthLoader/AuthLoader";
 
 function AuthLayout({ children }) {
   const { isLoaded, isSignedIn } = useAuth();
   const { user } = useUser();
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
 
   useEffect(() => {
     if (isSignedIn) {
